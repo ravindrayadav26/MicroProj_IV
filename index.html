@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MicroProj_IV</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div class="title">
+            <h2>Calc</h2>
+        </div>
+        <input class="output" id="output" placeholder="0" disabled />
+        <div class="calButtons">
+            <div class="row">
+                <button onclick="handleInput('7')">7</button>
+                <button onclick="handleInput('8')">8</button>
+                <button onclick="handleInput('9')">9</button>
+                <button onclick="handleDelete()">DEL</button>
+            </div>
+            <div class="row">
+                <button onclick="handleInput('4')">4</button>
+                <button onclick="handleInput('5')">5</button>
+                <button onclick="handleInput('6')">6</button>
+                <button onclick="handleInput('+')">+</button>
+            </div>
+            <div class="row">
+                <button onclick="handleInput('1')">1</button>
+                <button onclick="handleInput('2')">2</button>
+                <button onclick="handleInput('3')">3</button>
+                <button onclick="handleInput('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="handleInput('.')">.</button>
+                <button onclick="handleInput('0')">0</button>
+                <button onclick="handleInput('/')">/</button>
+                <button onclick="handleInput('*')">x</button>
+            </div>
+            <div class="row">
+                <button onclick="handleReset()">RESET</button>
+                <button onclick="handleCalculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
